@@ -7,9 +7,10 @@ app.get('/',(req,res) => {
 });
 
 app.get('/demo',(req,res) => {
-	res.send('demo path');
-	res.status(418);
 	res.set('X-full-stack','for life');
+	res.status(418);
+	res.send('demo path');
+	
 });
 
 app.listen(port,() => console.log('code space changes 2 example app listneing on port {port}!'));
